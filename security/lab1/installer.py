@@ -5,8 +5,6 @@ import os.path
 def get_checksum():
     output = check_output("wmic csproduct get UUID", shell=True).decode()
     hard_uuid = output.split("\n")[1]
-    # output = check_output("wmic csproduct get IdentifyingNumber", shell=True).decode()
-    # serial_num = output.split("\n")[1]
     return hashlib.sha512(hard_uuid.encode('utf-8')).hexdigest()
 
 

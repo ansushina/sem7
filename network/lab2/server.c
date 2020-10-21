@@ -46,8 +46,7 @@ int main(void)
         perror("Socket error");
         exit(1);
     }
-
-	//memset((char *)&server_addr, 0, sizeof(server_addr));
+	
 	serverAddr.sin_family = AF_INET;
 	serverAddr.sin_port = htons(SOCK_PORT);
 	serverAddr.sin_addr.s_addr = htonl(INADDR_ANY);
