@@ -34,3 +34,8 @@
 *.idea*
 *pycache*
 *.pyc
+
+*.cbp
+*.user
+*.cmake
+*CMakeFiles*
