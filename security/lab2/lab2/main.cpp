@@ -32,56 +32,40 @@ void to_file( vector<int> data, const char* filename) {
 
 int main()
 {
+    //Ввод имени файла
     std::string  filename;
-
     cout << "Input filename:";
     cin >> filename;
-    vector<int> str;
 
+
+    // Создаем новую энигму и сохраняем ее состояние
     Enigma e;
     char efile[] = "enigma.state";
     e.saveState(efile);
 
 
+    //Читаем файл
+    vector<int> str;
     int error = read_file(str, filename.c_str());
     if (error){
         return -1;
     }
 
-//    cout << "\nReaded:\n";
-//    for (int i = 0 ; i < str.size(); i++) {
-//        cout << char(str[i]);
-//    }
-//    cout << "\n";
-
+    // шифруем файл
     vector<int> a =  e.encode(str);
-
-//    cout << "\nEncoded\n";
-//    for (int i = 0 ; i < a.size(); i++) {
-//        cout <<char(a[i]);
-//    }
-//    cout << "\n";
-
     to_file(a, (filename + ".encoded").c_str());
+
+    //Декодируем файл
+
+    //Новая энигма со старым состоянием
     Enigma e1(efile);
 
+    //Читаем закодированный файл
     vector<int> str1;
     read_file(str1,  (filename + ".encoded").c_str());
 
-//    cout << "\nReaded:\n";
-//    for (int i = 0 ; i < str.size(); i++) {
-//        cout << char(str1[i]);
-//    }
-//    cout << "\n";
-
+    // Декодируем и записываем в файл
     vector<int> b = e1.encode(str1);
-
-//    cout << "\nDecoded:\n";
-//    for (int i = 0 ; i < b.size(); i++) {
-//        cout << char(b[i]);
-//    }
-//    cout << "\n";
-
     to_file(b, (filename + ".decoded").c_str());
 
     return 0;
