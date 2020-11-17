@@ -11,13 +11,14 @@
 #include <iostream>
 #include <vector>
 #include "threads.h"
-
+#include "task.h"
+#include <signal.h>
 #include "response.h"
 #include "request.h"
 
 #define MSG_LEN 512
 #define SRV_IP "127.0.0.1"
-#define SOCK_PORT 9111
+#define SOCK_PORT 9001
 #define THREADS 16
 #define BUFFER_SIZE 10240
 #define ROOT "/home/nastya"
@@ -124,7 +125,7 @@ std::string create_res(Request &req, const std::string root) {
 }
 
 
-void handler(int sock) {
+void handler(int sock, History &history, std::string addr) {
     int request;
     char buf[BUFFER_SIZE], *request_lines[3];
     char *file_name;
@@ -147,6 +148,7 @@ void handler(int sock) {
     printf("%s", buf);
 
     Request req(buf);
+    history.setHistory(addr, req.get_url());
     std::string result = create_res(req, ROOT);
     std::cout << result;  
     send(sock, result.c_str(), result.size(), 0);
@@ -156,10 +158,25 @@ void handler(int sock) {
 
 
 
+int sock;
+
+void close_socket(void)
+{
+	close(sock);
+	printf("Socket closed\n");
+}
+
+void catch_sigint(int signum)
+{
+	close_socket();	
+	exit(0);
+}
+
+
 int main(void)
 {
     struct sockaddr_in serverAddr, clientAddr;
-    int sock, new_socket;
+    int new_socket;
     unsigned int clientAddrLen = sizeof(clientAddr);
     char buf[MSG_LEN];
 
@@ -181,8 +198,11 @@ int main(void)
 
     printf("Bind ended\n");
 
+
+    signal(SIGINT, catch_sigint);
+
     listen(sock, 1);
-    printf("Server is listening...\n");
+    printf("Server is listening on %d\n", SOCK_PORT);
 
    
     // while(1)
@@ -192,9 +212,13 @@ int main(void)
     // }
 
     ThreadPool pool(THREADS);
+    History history("history.txt");
 
     while ((new_socket = accept(sock, (struct sockaddr*) &clientAddr, &clientAddrLen))) {
-           pool.enqueue(handler, new_socket);
+           std::string ip =  inet_ntoa(clientAddr.sin_addr);
+        //    ip += ":";
+        //    ip += std::to_string(ntohs(clientAddr.sin_port));
+           pool.enqueue(handler, new_socket, history, ip);
     }
 
     //close(sock);
