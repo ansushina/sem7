@@ -18,7 +18,7 @@
 #define MSG_LEN 512
 #define BUFFER_SIZE 10240
 #define SRV_IP "127.0.0.1"
-#define SOCK_PORT 9001
+#define SOCK_PORT 9010
 
 
 std::string create_request(std::string url) {
@@ -80,7 +80,6 @@ int main(void)
             }
     std::cout << buf;
     
-    delete[] message;
     close(clientSock);
     return 0;
 }

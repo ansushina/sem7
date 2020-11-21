@@ -18,7 +18,7 @@
 
 #define MSG_LEN 512
 #define SRV_IP "127.0.0.1"
-#define SOCK_PORT 9001
+#define SOCK_PORT 9010
 #define THREADS 16
 #define BUFFER_SIZE 10240
 #define ROOT "/home/nastya"
