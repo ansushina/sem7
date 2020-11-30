@@ -4,20 +4,20 @@
 ### БЖД 
  - [x] ДЗ1 :heavy_check_mark:
  - [x] Лабораторные работы :heavy_check_mark:
- - [ ] Доклад (к 1 декабря)
+ - [ ] Доклад (к 8 декабря)
  - [x] РК1 :heavy_check_mark:
  - [x] РК2 :heavy_check_mark:
  - [x] РК3
 
 ### Философия
  - [x] Доклад 1 :heavy_check_mark:
- - [ ] Доклад 2 (к 27 ноября)
+ - [ ] Доклад 2 (к 5 декабря)
  - [x] РК1 :heavy_check_mark:
 
 ### Экономика 
  - [x] Модуль 1 (доклад+презентация) :heavy_check_mark:
  - [x] Модуль 2 :heavy_check_mark:
- - [ ] Модуль 3 (к 1 декабря)
+ - [ ] Модуль 3 (к 8 декабря)
 
 ### Компльютерные сети
  - [x] ЛР1 :heavy_check_mark: 
@@ -25,7 +25,7 @@
  - [x] ЛР3 :heavy_check_mark:
  - [x] ЛР4 :heavy_check_mark:
  - [x] ЛР5 
- - [ ] ЛР6 (к 3 декабря)
+ - [x] ЛР6
  - [ ] ЛР7
  - [ ] ЛР8
  - [ ] ЛР9
@@ -36,6 +36,7 @@
  - [x] ЛР2 :heavy_check_mark:
  - [x] ЛР3 :heavy_check_mark:
  - [ ] ЛР4
+ - [ ] ЛР5
 
 
 ### WEB 
@@ -50,8 +51,8 @@
 
 ### Моделирование
  - [x] ЛР1 :heavy_check_mark: 
- - [x] ЛР2
- - [x] ЛР3
+ - [x] ЛР2 :heavy_check_mark: 
+ - [x] ЛР3 :heavy_check_mark: 
  - [ ] ЛР4
  - [ ] ЛР5
  - [ ] ЛР6
