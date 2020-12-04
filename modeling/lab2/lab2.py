@@ -33,13 +33,13 @@ def main():
     dist = erlang(a=2)
     plt.subplot(223)
     plt.title('Функция распределения')
-    cdf = [erlang_cdf(2, 2, i) for i in x]
+    cdf = [erlang_cdf(4, 4, i) for i in x]
     plt.plot(x, cdf, color='r', label=r'F({0}, {1})'.format(a, b))
     plt.legend()
 
     plt.subplot(224)
     plt.title('Функция плотности распределения')
-    pdf = [erlang_pdf(2,2,i) for i in x]
+    pdf = [erlang_pdf(4, 4,i) for i in x]
     plt.plot(x, pdf , color='b', label=r'f({0}, {1})'.format(a, b))
     plt.legend()
     

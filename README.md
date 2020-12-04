@@ -24,8 +24,8 @@
  - [x] ЛР2 :heavy_check_mark: 
  - [x] ЛР3 :heavy_check_mark:
  - [x] ЛР4 :heavy_check_mark:
- - [x] ЛР5 
- - [x] ЛР6
+ - [x] ЛР5 :heavy_check_mark:
+ - [x] ЛР6 :heavy_check_mark:
  - [ ] ЛР7
  - [ ] ЛР8
  - [ ] ЛР9
@@ -35,13 +35,13 @@
  - [x] ЛР1 :heavy_check_mark:
  - [x] ЛР2 :heavy_check_mark:
  - [x] ЛР3 :heavy_check_mark:
- - [ ] ЛР4
+ - [x] ЛР4 :heavy_check_mark:
  - [ ] ЛР5
 
 
 ### WEB 
- - [x] ЛР1 (к 1 декабря)
- - [ ] ЛР2 (к 10 декабря)
+ - [x] ЛР1 :heavy_check_mark: 
+ - [x] ЛР2 (к 10 декабря)
  - [ ] ЛР3 (к 20 декабря)
 
 ### Тестирование 
