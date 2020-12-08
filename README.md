@@ -1,23 +1,23 @@
 # sem7
 МГТУ им. Баумана, ИУ7, семестр 7.
 
-### БЖД 
+### БЖД :heavy_check_mark:
  - [x] ДЗ1 :heavy_check_mark:
  - [x] Лабораторные работы :heavy_check_mark:
- - [ ] Доклад (к 8 декабря)
+ - [x] Доклад :heavy_check_mark:
  - [x] РК1 :heavy_check_mark:
  - [x] РК2 :heavy_check_mark:
- - [x] РК3
+ - [x] РК3 :heavy_check_mark:
 
 ### Философия
  - [x] Доклад 1 :heavy_check_mark:
  - [ ] Доклад 2 (к 11 декабря)
  - [x] РК1 :heavy_check_mark:
 
-### Экономика 
+### Экономика :heavy_check_mark:
  - [x] Модуль 1 (доклад+презентация) :heavy_check_mark:
  - [x] Модуль 2 :heavy_check_mark:
- - [x] Модуль 3 (к 8 декабря)
+ - [x] Модуль 3 :heavy_check_mark:
 
 ### Компльютерные сети
  - [x] ЛР1 :heavy_check_mark: 
@@ -36,7 +36,7 @@
  - [x] ЛР2 :heavy_check_mark:
  - [x] ЛР3 :heavy_check_mark:
  - [x] ЛР4 :heavy_check_mark:
- - [ ] ЛР5
+ - [x] ЛР5
  - [ ] ЛР6
 
 
@@ -54,7 +54,7 @@
  - [x] ЛР1 :heavy_check_mark: 
  - [x] ЛР2 :heavy_check_mark: 
  - [x] ЛР3 :heavy_check_mark: 
- - [x] ЛР4
+ - [x] ЛР4 :heavy_check_mark:
  - [ ] ЛР5
  - [ ] ЛР6
  - [ ] ЛР7
