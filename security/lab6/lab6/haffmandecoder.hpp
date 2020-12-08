@@ -15,15 +15,29 @@ public:
     {
         amounts.resize(256, 0);
 
-        for (int i = 0; i < 256; i++){
-            amounts[i] = s[i];
+        char sym;
+        int bytes = 0;
+        std::string decoded_sym_bits = "";
+
+        for (int i = 0; i < 256 * 4; i++){
+            sym = s[i];
+            decoded_sym_bits += this->num_to_bits((unsigned)sym, 8);
+            bytes++;
+            if (bytes == 4)
+            {
+                int to_print = this->bit_to_nums(decoded_sym_bits);
+                amounts[i/4] = to_print;
+                decoded_sym_bits.clear();
+                decoded_sym_bits = "";
+                bytes = 0;
+            }
         }
-        for (int i = 256; i < s.size(); i++){
+        for (int i = 256 * 4; i < s.size(); i++){
             this->data.push_back(s[i]);
         }
         for (int i = 0; i < 256; i++) {
             if (amounts[i] > 0) {
-                 graph.emplace(Node(i, amounts[i]));
+                 graph.push(Node(i, amounts[i]));
             }
         }
         build();
@@ -65,15 +79,7 @@ public:
         return decoded_data;
     }
 
-    string num_to_bits(int num, int size)
-    {
-        string bit_size_input;
 
-        for (int j = size - 1; j > -1; j--)
-            bit_size_input.push_back(((num >> j) & 1)+'0');
-
-        return bit_size_input;
-    }
 
 
 private:
@@ -94,7 +100,7 @@ private:
             Node *left = new Node(n1);
             Node *right = new Node(n2);
 
-            Node center = Node(0, n1.count + n2.count, right, left);
+            Node center = Node(n1.sym + n2.sym, n1.count + n2.count, right, left);
             graph.push(center);
         }
         root = graph.top();
@@ -109,6 +115,26 @@ private:
                    codes[n.sym] = n.code;
                 }
                 return;
+    }
+
+    string num_to_bits(int num, int size)
+    {
+        string bit_size_input;
+
+        for (int j = size - 1; j > -1; j--)
+            bit_size_input.push_back(((num >> j) & 1)+'0');
+
+        return bit_size_input;
+    }
+
+    int bit_to_nums(std::string bits)
+    {
+        int num = 0;
+
+        for (int c : bits)
+            num = (num << 1) | (c - '0');
+
+        return num;
     }
 };
 

@@ -21,7 +21,7 @@ public:
         for(auto i: s) amounts[i]++;
         for (int i = 0; i < 256; i++) {
             if (amounts[i] > 0) {
-                 graph.emplace(Node(i, amounts[i]));
+                 graph.push(Node(i, amounts[i]));
             }
         }
         build();
@@ -44,10 +44,15 @@ public:
         vector<unsigned char> code_data;
         for (int i = 0; i < 256; i++){
 //            code_data.push_back(i);
-            code_data.push_back(amounts[i]);
+            std::string encoded_sym_bits = this->num_to_bits(amounts[i], 32);
+            for (int sym_to_print = 0; sym_to_print < 4; sym_to_print++)
+               {
+                  int to_print = this->bit_to_nums(encoded_sym_bits.substr(sym_to_print*8, 8));
+                  code_data.push_back(to_print);
+            }
+
         }
-        int i
-                = 0;
+        int i = 0;
         int last = 0;
         while (i < bit_data.size()) {
             int to_print;
@@ -66,6 +71,15 @@ public:
         }
         code_data.push_back(last);
         return code_data;
+    }
+    string num_to_bits(int num, int size)
+    {
+        string bit_size_input;
+
+        for (int j = size - 1; j > -1; j--)
+            bit_size_input.push_back(((num >> j) & 1)+'0');
+
+        return bit_size_input;
     }
 
     int bit_to_nums(std::string bits)
@@ -99,7 +113,7 @@ private:
             Node *left = new Node(n1);
             Node *right = new Node(n2);
 
-            Node center = Node(0, n1.count + n2.count, right, left);
+            Node center = Node(n1.sym + n2.sym, n1.count + n2.count, right, left);
             graph.push(center);
         }
         root = graph.top();

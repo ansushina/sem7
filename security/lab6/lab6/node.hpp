@@ -12,7 +12,7 @@ using namespace std;
 
 struct Node
 {
-    Node(const unsigned char sym=0, const int count = 0, Node *right= NULL, Node *left = NULL):
+    Node(int sym=0, const int count = 0, Node *right= NULL, Node *left = NULL):
         sym(sym),
         count(count),
         code(""),
@@ -29,12 +29,15 @@ struct Node
     {}
 
     string code;
-    unsigned char sym;
+    int sym;
     int count;
     Node *right;
     Node *left;
 
     bool operator() (const Node& x, const Node& y) const {
+            if (x.count == y.count) {
+                return x.sym > y.sym;
+            }
             return x.count > y.count;
         }
 
