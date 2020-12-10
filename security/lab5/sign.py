@@ -67,6 +67,3 @@ if __name__ == '__main__':
             print("Подпись подтверждена. ")
         except(ValueError):
             print("Неверная подпись!")
-        
-        # Отличающийся хэш не должен проходить проверку
-        # pkcs1_15.new(pubkey).verify(SHA256.new(b'test'), signature) # raise ValueError("Invalid signature")
