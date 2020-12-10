@@ -31,13 +31,13 @@
  - [ ] ЛР9
  - [ ] ЛР10
 
-### Защита информации
+### Защита информации :heavy_check_mark:
  - [x] ЛР1 :heavy_check_mark:
  - [x] ЛР2 :heavy_check_mark:
  - [x] ЛР3 :heavy_check_mark:
  - [x] ЛР4 :heavy_check_mark:
- - [x] ЛР5
- - [ ] ЛР6
+ - [x] ЛР5 :heavy_check_mark:
+ - [x] ЛР6 :heavy_check_mark:
 
 
 ### WEB 
@@ -55,7 +55,7 @@
  - [x] ЛР2 :heavy_check_mark: 
  - [x] ЛР3 :heavy_check_mark: 
  - [x] ЛР4 :heavy_check_mark:
- - [ ] ЛР5
+ - [x] ЛР5
  - [ ] ЛР6
  - [ ] ЛР7
  - [ ] ЛР8
