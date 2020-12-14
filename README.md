@@ -40,10 +40,10 @@
  - [x] ЛР6 :heavy_check_mark:
 
 
-### WEB 
+### WEB :heavy_check_mark: 
  - [x] ЛР1 :heavy_check_mark: 
  - [x] ЛР2 :heavy_check_mark: 
- - [x] ЛР3 (к 27 декабря)
+ - [x] ЛР3 :heavy_check_mark: 
 
 ### Тестирование 
  - [ ] ЛР1 
