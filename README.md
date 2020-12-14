@@ -9,9 +9,9 @@
  - [x] РК2 :heavy_check_mark:
  - [x] РК3 :heavy_check_mark:
 
-### Философия
+### Философия :heavy_check_mark:
  - [x] Доклад 1 :heavy_check_mark:
- - [ ] Доклад 2 (к 11 декабря)
+ - [x] Доклад 2 (к 11 декабря)
  - [x] РК1 :heavy_check_mark:
 
 ### Экономика :heavy_check_mark:
@@ -43,7 +43,7 @@
 ### WEB 
  - [x] ЛР1 :heavy_check_mark: 
  - [x] ЛР2 :heavy_check_mark: 
- - [ ] ЛР3 (к 27 декабря)
+ - [x] ЛР3 (к 27 декабря)
 
 ### Тестирование 
  - [ ] ЛР1 
@@ -55,7 +55,7 @@
  - [x] ЛР2 :heavy_check_mark: 
  - [x] ЛР3 :heavy_check_mark: 
  - [x] ЛР4 :heavy_check_mark:
- - [x] ЛР5
- - [ ] ЛР6
+ - [x] ЛР5 :heavy_check_mark:
+ - [x] ЛР6
  - [ ] ЛР7
  - [ ] ЛР8
