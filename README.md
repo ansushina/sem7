@@ -26,7 +26,7 @@
  - [x] ЛР4 :heavy_check_mark:
  - [x] ЛР5 :heavy_check_mark:
  - [x] ЛР6 :heavy_check_mark:
- - [ ] ЛР7
+ - [x] ЛР7
  - [x] ЛР8
  - [x] ЛР9
 
