@@ -26,8 +26,8 @@
  - [x] ЛР4 :heavy_check_mark:
  - [x] ЛР5 :heavy_check_mark:
  - [x] ЛР6 :heavy_check_mark:
- - [x] ЛР7
- - [x] ЛР8
+ - [x] ЛР7 :heavy_check_mark:
+ - [x] ЛР8 :heavy_check_mark:
  - [x] ЛР9
 
 ### Защита информации :heavy_check_mark:
@@ -55,6 +55,6 @@
  - [x] ЛР3 :heavy_check_mark: 
  - [x] ЛР4 :heavy_check_mark:
  - [x] ЛР5 :heavy_check_mark:
- - [x] ЛР6
- - [x] ЛР7
+ - [x] ЛР6 :heavy_check_mark:
+ - [x] ЛР7 :heavy_check_mark:
  - [x] ЛР8
