@@ -11,7 +11,7 @@
 
 ### Философия :heavy_check_mark:
  - [x] Доклад 1 :heavy_check_mark:
- - [x] Доклад 2 (к 11 декабря)
+ - [x] Доклад 2 :heavy_check_mark: 
  - [x] РК1 :heavy_check_mark:
 
 ### Экономика :heavy_check_mark:
@@ -28,7 +28,7 @@
  - [x] ЛР6 :heavy_check_mark:
  - [x] ЛР7 :heavy_check_mark:
  - [x] ЛР8 :heavy_check_mark:
- - [x] ЛР9
+ - [x] ЛР9 :heavy_check_mark: 
 
 ### Защита информации :heavy_check_mark:
  - [x] ЛР1 :heavy_check_mark:
@@ -39,17 +39,17 @@
  - [x] ЛР6 :heavy_check_mark:
 
 
-### WEB :heavy_check_mark: 
+### WEB ( в отдельном репозиотории) :heavy_check_mark: 
  - [x] ЛР1 :heavy_check_mark: 
  - [x] ЛР2 :heavy_check_mark: 
  - [x] ЛР3 :heavy_check_mark: 
 
-### Тестирование 
- - [ ] ЛР1 
- - [ ] ЛР2
- - [ ] ЛР3 
+### Тестирование (в репозитории веба) :heavy_check_mark: 
+ - [x] ЛР1 :heavy_check_mark: 
+ - [x] ЛР2 :heavy_check_mark: 
+ - [x] ЛР3 :heavy_check_mark: 
 
-### Моделирование
+### Моделирование :heavy_check_mark: 
  - [x] ЛР1 :heavy_check_mark: 
  - [x] ЛР2 :heavy_check_mark: 
  - [x] ЛР3 :heavy_check_mark: 
@@ -57,4 +57,4 @@
  - [x] ЛР5 :heavy_check_mark:
  - [x] ЛР6 :heavy_check_mark:
  - [x] ЛР7 :heavy_check_mark:
- - [x] ЛР8
+ - [x] ЛР8 :heavy_check_mark: 
