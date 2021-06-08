@@ -39,12 +39,15 @@
  - [x] ЛР6 :heavy_check_mark:
 
 
-### WEB ( в отдельном репозиотории) :heavy_check_mark: 
+### Web :heavy_check_mark: 
+[Репозиторий](https://github.com/ansushina/web_bmstu) 
  - [x] ЛР1 :heavy_check_mark: 
  - [x] ЛР2 :heavy_check_mark: 
  - [x] ЛР3 :heavy_check_mark: 
 
-### Тестирование (в репозитории веба) :heavy_check_mark: 
+### Тестирование  :heavy_check_mark: 
+
+[Репозиторий](https://github.com/ansushina/web_bmstu) 
  - [x] ЛР1 :heavy_check_mark: 
  - [x] ЛР2 :heavy_check_mark: 
  - [x] ЛР3 :heavy_check_mark: 
